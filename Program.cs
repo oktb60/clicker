@@ -32,6 +32,8 @@ namespace NewNamespace
             sayac.Width = 100;
             sayac.Height = 50;
             int skor = 0;
+            sayac.BorderStyle = BorderStyle.FixedSingle;
+            sayac.TextAlign = ContentAlignment.MiddleCenter;
 
             // Button click event handler 
             button.Click += (sender, e) =>
