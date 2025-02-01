@@ -1,0 +1,15 @@
+c:\Users\tuncy\OneDrive\Belgeler\GitHub\clicker\bin\Debug\net9.0-windows\Project.exe
+c:\Users\tuncy\OneDrive\Belgeler\GitHub\clicker\bin\Debug\net9.0-windows\Project.deps.json
+c:\Users\tuncy\OneDrive\Belgeler\GitHub\clicker\bin\Debug\net9.0-windows\Project.runtimeconfig.json
+c:\Users\tuncy\OneDrive\Belgeler\GitHub\clicker\bin\Debug\net9.0-windows\Project.dll
+c:\Users\tuncy\OneDrive\Belgeler\GitHub\clicker\bin\Debug\net9.0-windows\Project.pdb
+c:\Users\tuncy\OneDrive\Belgeler\GitHub\clicker\obj\Debug\net9.0-windows\Project.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\tuncy\OneDrive\Belgeler\GitHub\clicker\obj\Debug\net9.0-windows\Project.AssemblyInfoInputs.cache
+c:\Users\tuncy\OneDrive\Belgeler\GitHub\clicker\obj\Debug\net9.0-windows\Project.AssemblyInfo.cs
+c:\Users\tuncy\OneDrive\Belgeler\GitHub\clicker\obj\Debug\net9.0-windows\Project.csproj.CoreCompileInputs.cache
+c:\Users\tuncy\OneDrive\Belgeler\GitHub\clicker\obj\Debug\net9.0-windows\Project.sourcelink.json
+c:\Users\tuncy\OneDrive\Belgeler\GitHub\clicker\obj\Debug\net9.0-windows\Project.dll
+c:\Users\tuncy\OneDrive\Belgeler\GitHub\clicker\obj\Debug\net9.0-windows\refint\Project.dll
+c:\Users\tuncy\OneDrive\Belgeler\GitHub\clicker\obj\Debug\net9.0-windows\Project.pdb
+c:\Users\tuncy\OneDrive\Belgeler\GitHub\clicker\obj\Debug\net9.0-windows\Project.genruntimeconfig.cache
+c:\Users\tuncy\OneDrive\Belgeler\GitHub\clicker\obj\Debug\net9.0-windows\ref\Project.dll

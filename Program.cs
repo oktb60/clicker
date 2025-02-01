@@ -14,8 +14,8 @@ namespace NewNamespace
             // Create a new form
             Form mainForm = new Form();
             mainForm.Text = "My Application Window";
-            mainForm.Width = 400;
-            mainForm.Height = 300;
+            mainForm.Width = 1600;
+            mainForm.Height = 1200;
 
             // Create the button
             Button button = new Button();
