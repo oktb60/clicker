@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tuncy\\OneDrive\\Belgeler\\GitHub\\clicker\\Project.csproj": {}
+    "c:\\Users\\tuncy\\OneDrive\\Belgeler\\GitHub\\clicker\\Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tuncy\\OneDrive\\Belgeler\\GitHub\\clicker\\Project.csproj": {
+    "c:\\Users\\tuncy\\OneDrive\\Belgeler\\GitHub\\clicker\\Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tuncy\\OneDrive\\Belgeler\\GitHub\\clicker\\Project.csproj",
+        "projectUniqueName": "c:\\Users\\tuncy\\OneDrive\\Belgeler\\GitHub\\clicker\\Project.csproj",
         "projectName": "Project",
-        "projectPath": "C:\\Users\\tuncy\\OneDrive\\Belgeler\\GitHub\\clicker\\Project.csproj",
+        "projectPath": "c:\\Users\\tuncy\\OneDrive\\Belgeler\\GitHub\\clicker\\Project.csproj",
         "packagesPath": "C:\\Users\\tuncy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tuncy\\OneDrive\\Belgeler\\GitHub\\clicker\\obj\\",
+        "outputPath": "c:\\Users\\tuncy\\OneDrive\\Belgeler\\GitHub\\clicker\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
