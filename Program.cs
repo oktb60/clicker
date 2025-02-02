@@ -38,16 +38,42 @@ namespace NewNamespace
             sayac.TextAlign = ContentAlignment.MiddleCenter;
             sayac.Font = new Font("Arial", 14, FontStyle.Bold);
 
+            //create upgrade
+            Button upgrade = new Button();
+            upgrade.Location = new Point(0, 0);
+            upgrade.Height = 100;
+            upgrade.Width = 200;
+            upgrade.Text = "x2";
+            upgrade.Font = new Font("Arial", 16, FontStyle.Bold);
+
+            bool doublepoints = false;
+
+            //upgrade click handler
+            upgrade.Click += (sender, e) =>
+            {
+                doublepoints = true;
+                upgrade.Visible = false;
+            };
+
+
             // Button click event handler 
             button.Click += (sender, e) =>
             {
-                skor++; 
+                if (doublepoints==true)
+                {
+                    skor += 2;
+                }
+                else
+                {
+                    skor += 1;
+                }
                 sayac.Text = skor.ToString();
             };
 
             // Add the button and label to the window
             mainForm.Controls.Add(button);
             mainForm.Controls.Add(sayac);
+            mainForm.Controls.Add(upgrade);
 
             // Run the application
             Application.Run(mainForm);
