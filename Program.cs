@@ -35,7 +35,7 @@ namespace NewNamespace
             sayac.Location = new Point((mainForm.Width - sayac.Width) / 2, button.Location.Y + button.Height + 10); // Position it below the button
             sayac.Width = 100;
             sayac.Height = 50;
-            int skor = 0;
+            int skor = 2000;
             sayac.BorderStyle = BorderStyle.FixedSingle;
             sayac.TextAlign = ContentAlignment.MiddleCenter;
             sayac.Font = new Font("Arial", 14, FontStyle.Bold);
@@ -47,40 +47,78 @@ namespace NewNamespace
             upgrade.Width = 200;
             upgrade.Text = "x2";
             upgrade.Font = new Font("Arial", 16, FontStyle.Bold);
+            upgrade.Visible = true;
 
+            //Create price tag for upgrade
             Label price = new Label();
             price.Location = new Point(45,100);
             price.Text = "20 points";
             price.BorderStyle = BorderStyle.FixedSingle;
             price.TextAlign = ContentAlignment.MiddleCenter;
+            price.Visible = true;
 
-            bool doublepoints = false;
+            int multpoints = 1;
 
+             //create upgrade
+            Button upgrade1 = new Button();
+            upgrade1.Location = new Point(210, 0);
+            upgrade1.Height = 100;
+            upgrade1.Width = 200;
+            upgrade1.Text = "+1x";
+            upgrade1.Font = new Font("Arial", 16, FontStyle.Bold);
+            upgrade1.Visible = true;
+
+            //Create price tag for x2 upgrade
+            Label price1 = new Label();
+            price1.Location = new Point(255,100);
+
+            int price1price=30;
+            int price1buyamount=0;
+            price1.Text = $"{price1price} points \n {price1buyamount}/10";
+            price1.BorderStyle = BorderStyle.FixedSingle;
+            price1.TextAlign = ContentAlignment.MiddleCenter;
+            price1.Visible = true;
+            int addmultpoints=1;
+
+            //upgrade1 handler
+            upgrade1.Click += (sender, e) =>
+                {
+                    if(skor>=price1price&&price1buyamount<10){
+            
+                    addmultpoints += 1;
+                    skor-=price1price;
+                    price1price*=15;
+                    price1price/=10;
+                    price1buyamount+=1;
+                    if(price1buyamount==10){
+                     price1.Visible = false;
+                     upgrade1.Visible = false;
+                    }
+                    sayac.Text = skor.ToString();
+                    };
+                    price1.Text = $"{price1price} points \n {price1buyamount}/10";     
+                };
+        
             //upgrade click handler
             upgrade.Click += (sender, e) =>
-            {
-                if(skor>=20)
                 {
-                    doublepoints = true;
-                upgrade.Visible = false;
-                price.Visible = false;
-                }
-             
-            };
+                    if(skor>=20){
+            
+                    multpoints *= 2;
+                    skor-=20;
+                    upgrade.Visible = false;
+                    price.Visible= false;
+                    sayac.Text = skor.ToString();
+                    };
+                };
+            
 
 
             // Button click event handler 
             button.Click += (sender, e) =>
             {
                 
-                if (doublepoints==true)
-                {
-                    skor += 2;
-                }
-                else
-                {
-                    skor += 1;
-                }
+                skor+=multpoints*addmultpoints;
                 sayac.Text = skor.ToString();
             };
 
@@ -89,6 +127,8 @@ namespace NewNamespace
             mainForm.Controls.Add(sayac);
             mainForm.Controls.Add(upgrade);
             mainForm.Controls.Add(price);
+            mainForm.Controls.Add(upgrade1);
+            mainForm.Controls.Add(price1);
 
             // Run the application
             Application.Run(mainForm);
