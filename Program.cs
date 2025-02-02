@@ -24,8 +24,8 @@ namespace NewNamespace
 
             // Create the button
             Button button = new Button();
-            button.Width = 200;
-            button.Height = 250;
+            button.Width = 700;
+            button.Height = 500;
             button.Font = new Font("Arial", 24, FontStyle.Bold); // Set the font
             button.Image = image;
             button.ImageAlign = ContentAlignment.MiddleCenter;
