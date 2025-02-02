@@ -6,6 +6,8 @@ namespace NewNamespace
 {
     class NewClass
     {
+        private const bool V = false;
+
         [STAThread]
         static void Main(string[] args)
         {
@@ -21,8 +23,8 @@ namespace NewNamespace
             // Create the button
             Button button = new Button();
             button.Text = "CLICK ME!";
-            button.Width = 700;
-            button.Height = 450;
+            button.Width = 500;
+            button.Height = 300;
             button.Font = new Font("Arial", 24, FontStyle.Bold); // Set the font
 
             // Center the button
@@ -46,19 +48,31 @@ namespace NewNamespace
             upgrade.Text = "x2";
             upgrade.Font = new Font("Arial", 16, FontStyle.Bold);
 
+            Label price = new Label();
+            price.Location = new Point(45,100);
+            price.Text = "20 points";
+            price.BorderStyle = BorderStyle.FixedSingle;
+            price.TextAlign = ContentAlignment.MiddleCenter;
+
             bool doublepoints = false;
 
             //upgrade click handler
             upgrade.Click += (sender, e) =>
             {
-                doublepoints = true;
+                if(skor>=20)
+                {
+                    doublepoints = true;
                 upgrade.Visible = false;
+                price.Visible = false;
+                }
+             
             };
 
 
             // Button click event handler 
             button.Click += (sender, e) =>
             {
+                
                 if (doublepoints==true)
                 {
                     skor += 2;
@@ -74,6 +88,7 @@ namespace NewNamespace
             mainForm.Controls.Add(button);
             mainForm.Controls.Add(sayac);
             mainForm.Controls.Add(upgrade);
+            mainForm.Controls.Add(price);
 
             // Run the application
             Application.Run(mainForm);
