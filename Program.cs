@@ -14,6 +14,8 @@ namespace NewNamespace
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+            Image image = Image.FromFile("image.png");
+
             // Create a new window
             Form mainForm = new Form();
             mainForm.Text = "My Application Window";
@@ -22,10 +24,13 @@ namespace NewNamespace
 
             // Create the button
             Button button = new Button();
-            button.Text = "CLICK ME!";
-            button.Width = 500;
-            button.Height = 300;
+            button.Width = 200;
+            button.Height = 250;
             button.Font = new Font("Arial", 24, FontStyle.Bold); // Set the font
+            button.Image = image;
+            button.ImageAlign = ContentAlignment.MiddleCenter;
+            
+            
 
             // Center the button
             button.Location = new Point((mainForm.Width - button.Width) / 2, (mainForm.Height - button.Height) / 2 - 50);
@@ -35,7 +40,7 @@ namespace NewNamespace
             sayac.Location = new Point((mainForm.Width - sayac.Width) / 2, button.Location.Y + button.Height + 10); // Position it below the button
             sayac.Width = 100;
             sayac.Height = 50;
-            int skor = 2000;
+            int skor = 0;
             sayac.BorderStyle = BorderStyle.FixedSingle;
             sayac.TextAlign = ContentAlignment.MiddleCenter;
             sayac.Font = new Font("Arial", 14, FontStyle.Bold);
